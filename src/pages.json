@@ -1,0 +1,658 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+      "name" : "index",
+      "meta" : {
+        "tabbar" : 1
+      },
+			"style": {
+				"navigationBarTitleText": "",
+        "navigationStyle" : "custom"
+			}
+		},
+    {
+			"path": "pages/shop/index",
+      "meta" : {
+        "tabbar" : 1
+      },
+      "name" : "shop",
+			"style": {
+				"navigationBarTitleText": "",
+        "navigationStyle" : "custom"
+			}
+    },
+    {
+			"path": "pages/shop/detail",
+      "name" : "shop.detail",
+			"style": {
+				"navigationBarTitleText": "",
+        "navigationStyle" : "custom"
+			}
+    },
+    {
+			"path": "pages/act/index",
+      "name" : "act",
+      "meta" : {
+        "tabbar" : 1
+      },
+			"style": {
+				"navigationBarTitleText": "",
+        "navigationStyle" : "custom"
+			}
+    },
+    {
+			"path": "pages/act/detail",
+      "name" : "act.detail",
+			"style": {
+				"navigationBarTitleText": "",
+        "navigationStyle" : "custom"
+			}
+    },
+    {
+			"path": "pages/act/confirm",
+      "name" : "act.confirm",
+			"style": {
+				"navigationBarTitleText": "",
+        "navigationStyle" : "custom"
+			}
+    },
+    {
+			"path": "pages/credit/index",
+      "name" : "credit",
+			"style": {
+				"navigationBarTitleText": "",
+        "navigationStyle" : "custom"
+			}
+    },
+    {
+			"path": "pages/credit/detail",
+      "name" : "credit.detail",
+			"style": {
+				"navigationBarTitleText": "",
+        "navigationStyle" : "custom"
+			}
+    },
+    {
+			"path": "pages/credit/confirm",
+      "name" : "credit.confirm",
+			"style": {
+				"navigationBarTitleText": "",
+        "navigationStyle" : "custom"
+			}
+    },
+    {
+			"path": "pages/product/index",
+      "name" : "product",
+			"style": {
+				"navigationBarTitleText": "",
+        "navigationStyle" : "custom"
+			}
+    },
+    {
+			"path": "pages/product/detail",
+      "name" : "product.detail",
+			"style": {
+				"navigationBarTitleText": "",
+        "navigationStyle" : "custom"
+			}
+    },
+    {
+			"path": "pages/my/index",
+      "meta" : {
+        "tabbar" : 1
+      },
+      "name" : "my",
+			"style": {
+				"navigationBarTitleText": "",
+        "navigationStyle" : "custom",
+        "backgroundColorBottom" : "#FFFFFF"
+			}
+    },
+    {
+			"path": "pages/my/login",
+      "name" : "my.login",
+			"style": {
+				"navigationBarTitleText": "",
+        "navigationStyle" : "custom"
+			}
+    },
+    {
+			"path": "pages/my/agreement",
+      "name" : "my.agreement",
+			"style": {
+				"navigationBarTitleText": "",
+        "navigationStyle" : "custom"
+			}
+    },
+    {
+			"path": "pages/my/info",
+      "name" : "my.info",
+			"style": {
+				"navigationBarTitleText": "",
+        "navigationStyle" : "custom"
+			}
+    },
+    {
+			"path": "pages/my/apply",
+      "name" : "my.apply",
+			"style": {
+				"navigationBarTitleText": "",
+        "navigationStyle" : "custom"
+			}
+    },
+    {
+			"path": "pages/my/welfare",
+      "name" : "my.welfare",
+			"style": {
+				"navigationBarTitleText": "",
+        "navigationStyle" : "custom"
+			}
+    },
+    {
+			"path": "pages/my/about",
+      "name" : "my.about",
+			"style": {
+				"navigationBarTitleText": "",
+        "navigationStyle" : "custom"
+			}
+    },
+    {
+			"path": "pages/my/credit",
+      "name" : "my.credit",
+			"style": {
+				"navigationBarTitleText": "",
+        "navigationStyle" : "custom"
+			}
+    },
+    {
+			"path": "pages/my/creditearn",
+      "name" : "my.creditearn",
+			"style": {
+				"navigationBarTitleText": "",
+        "navigationStyle" : "custom"
+			}
+    },
+    {
+			"path": "pages/my/creditrule",
+      "name" : "my.creditrule",
+			"style": {
+				"navigationBarTitleText": "",
+        "navigationStyle" : "custom"
+			}
+    },
+    {
+			"path": "pages/my/act",
+      "name" : "my.act",
+			"style": {
+				"navigationBarTitleText": "",
+        "navigationStyle" : "custom"
+			}
+    },
+    {
+			"path": "pages/my/exchange",
+      "name" : "my.exchange",
+			"style": {
+				"navigationBarTitleText": "",
+        "navigationStyle" : "custom"
+			}
+    },
+    {
+			"path": "pages/my/exchangeDetail",
+      "name" : "my.exchange.detail",
+			"style": {
+				"navigationBarTitleText": "",
+        "navigationStyle" : "custom"
+			}
+    },
+    {
+			"path": "pages/check/apply",
+      "name" : "check.apply",
+			"style": {
+				"navigationBarTitleText": "申请核销员",
+		    "backgroundColorTop": "#FFFFFF"
+			}
+    },
+    {
+			"path": "pages/check/applyresult",
+      "name" : "check.applyresult",
+			"style": {
+				"navigationBarTitleText": "核销结果"
+			}
+    },
+    {
+			"path": "pages/check/confirm",
+      "name" : "check.confirm",
+			"style": {
+				"navigationBarTitleText": "确认核销"
+			}
+    },
+    {
+			"path": "pages/check/result",
+      "name" : "check.result",
+			"style": {
+				"navigationBarTitleText": "核销结果"
+			}
+    }
+	],
+  "tabBar": {
+    "color": "#898989",
+    "selectedColor": "#2e86e5",
+    "backgroundColor": "#FFFFFF",
+    "custom" : true,
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/shop/index",
+        "text": "商家"
+      },
+      {
+        "pagePath": "pages/act/index",
+        "text": "活动"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的"
+      }
+    ]
+  },
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColorTop": "#bcedef",
+		"backgroundColor": "#F8F8F9"
+	},
+  "condition": {
+    "list": [
+      {
+        "name": "",
+        "pathName": "pages/act/detail",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/credit/detail",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/creditearn",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/exchangeDetail",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/act/detail",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/credit/index",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/info",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/act/detail",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/act",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/credit/detail",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/act/detail",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/credit/detail",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/credit/index",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/shop/index",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/act/index",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/index",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/index/index",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/shop/index",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/credit/index",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/act/detail",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/act/detail",
+        "query": "scene=1",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/shop/detail",
+        "query": "scene=2",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/credit/detail",
+        "query": "scene=2",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/apply",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/info",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/credit",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/creditearn",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/info",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/creditearn",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/act/detail",
+        "query": "scene=1",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/act",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/credit/detail",
+        "query": "scene=2",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/exchange",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/exchangeDetail",
+        "query": "scene=7",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/exchangeDetail",
+        "query": "id=12&pid=2",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/act/detail",
+        "query": "scene=1",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/credit/detail",
+        "query": "scene=2",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "申请活动核销员",
+        "pathName": "pages/check/apply",
+        "query": "id=1&type=1",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "申请商家核销员",
+        "pathName": "pages/check/apply",
+        "query": "id=1&type=2",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/creditrule",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/about",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/login",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/agreement",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/exchangeDetail",
+        "query": "id=17&pid=2",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/exchange",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/exchangeDetail",
+        "query": "scene=17",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/act",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/act/index",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/shop/index",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/welfare",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/creditearn",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/shop/detail",
+        "query": "scene=1",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/creditearn",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/my/info",
+        "query": "",
+        "launchMode": "default",
+        "scene": null
+      },
+      {
+        "name": "",
+        "pathName": "pages/check/result",
+        "query": "id=1&type=1&target_uid=xxxx",
+        "launchMode": "default",
+        "scene": null
+      }
+    ]
+  }
+}

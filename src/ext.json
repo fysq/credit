@@ -1,0 +1,17 @@
+{
+  "extEnable": true,
+  "extAppid": "wx92c10616907cf7a2",
+  "ext": {
+    "env": "production",
+    "app_id" : "0ZlaRnoa7q",
+    "host": "https://yikatong.loveshang.com",
+    "static_path": "https://yikatong-loveshang.oss-cn-hangzhou.aliyuncs.com/",
+    "qiniuHost" : "https://yikatong-loveshang.oss-cn-hangzhou.aliyuncs.com/",
+    "support" : "由代理商提供技术支持",
+    "color" : "#ffcc33"
+  },
+  "functionalPages": {
+    "independent": true
+  }
+}
+

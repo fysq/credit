@@ -1,12 +1,13 @@
 <template>
-	<view class="indexMod">
-    <uni-nav-bar :fixed="true" status-bar :border="false" :title="title" :type="1" leftWidth="174rpx" rightWidth="174rpx" :tabPage="true"/>
+  <view class="indexMod">
+    <uni-nav-bar :fixed="true" status-bar :border="false" :title="title" :type="1" leftWidth="174rpx"
+      rightWidth="174rpx" :tabPage="true" />
     <block v-if="isLoad">
       <view class="im-swiper">
         <imSwiper :list="state.ad.index_swiper"></imSwiper>
       </view>
       <view class="im-menus imMenus">
-        <view class="im-b1" @tap="onApply" :class="{ 'show' : isLogin == 1 || isLogin == 0 }"></view>
+        <view class="im-b1" @tap="onApply" :class="{ 'show': isLogin == 1 || isLogin == 0 }"></view>
         <view class="im-b2">
           <view class="im-item" @tap="onShop">
             <view class="im-icon i1"></view>
@@ -61,7 +62,7 @@
       <imAd ref="c-imAd" :ad="state.ad.index_open"></imAd>
     </block>
     <tabbar></tabbar>
-	</view>
+  </view>
 </template>
 <script>
 import imSwiper from '../components/imSwiper.vue'
@@ -71,7 +72,7 @@ import imCredit from '../components/imCredit.vue'
 import imShop from '../components/imShop.vue'
 import imProduct from '../components/imProduct.vue'
 export default {
-  components : {
+  components: {
     imSwiper,
     imShop,
     imCredit,
@@ -79,17 +80,17 @@ export default {
     imProduct,
     imAd
   },
-  computed : {
-    isLogin(){
+  computed: {
+    isLogin() {
       return this.$store.getters.isLogin;
     }
   },
   data() {
     return {
       title: '',
-      state : {},
-      config : {},
-      isLoad : false,
+      state: {},
+      config: {},
+      isLoad: false,
     }
   },
   onLoad() {
@@ -109,55 +110,54 @@ export default {
     })
   },
   methods: {
-    onShare(){
+    onShare() {
       let { config } = this;
       return {
-        title : config.share_title,
-        imageUrl : this.imageFormat(config.share_cover,500,400),
+        title: config.share_title,
+        imageUrl: this.imageFormat(config.share_cover, 500, 400),
       }
     },
-    onShop(){
+    onShop() {
       this.$Router.pushTab({
-        name : 'shop'
+        name: 'shop'
       })
-      this.$ev.delayEmit('shop.index',{
-        a : 1,
-        b : 2
+      this.$ev.delayEmit('shop.index', {
+        a: 1,
+        b: 2
       });
     },
-    onCredit(){
+    onCredit() {
       this.$Router.push({
-        name : "credit"
+        name: "credit"
       })
     },
-    onProduct(){
+    onProduct() {
       this.$Router.push({
-        name : 'product'
+        name: 'product'
       })
     },
-    onAct(){
+    onAct() {
       this.$Router.pushTab({
-        name : "act",
+        name: "act",
       })
     },
-    onApply(){
+    onApply() {
       this.$Router.push({
-        name : 'my.apply'
+        name: 'my.apply'
       });
     },
-    onMy(){
+    onMy() {
       this.$Router.pushTab({
-        name : "my",
+        name: "my",
       })
     },
   },
-  onShareAppMessage(){
+  onShareAppMessage() {
     return this.onShare();
   },
-  onShareTimeline(){
+  onShareTimeline() {
     return this.onShare();
   }
 }
 </script>
-<style>
-</style>
+<style></style>

@@ -1,14 +1,15 @@
 <template>
   <view class="imActivity">
     <view class="ia-list">
-      <view class="ia-item" @tap="onDetail" v-for="(item,index) in list" :key="index" :data-item="item">
+      <view class="ia-item" @tap="onDetail" v-for="(item, index) in list" :key="index" :data-item="item">
         <view class="ia-pic">
-          <image :src="imageFormat(item.cover,690,270)" class="blockImg"></image>
+          <image :src="imageFormat(item.cover, 690, 270)" class="blockImg"></image>
           <view class="ia-tag commonTag" :class="'t' + item.progress">{{ progressFormat(item.progress) }}</view>
         </view>
         <view class="ia-info">
           <view class="ia-name">{{ item.title }}</view>
-          <view class="ia-time"><span class="ia-time-label">活动时间</span>{{ timeRange(item.start_time,item.end_time)}}</view>
+          <view class="ia-time"><span class="ia-time-label">活动时间</span>{{ timeRange(item.start_time, item.end_time) }}
+          </view>
         </view>
       </view>
       <!--view class="ia-item">
@@ -26,24 +27,24 @@
 </template>
 <script>
 export default {
-  props : ['list'],
+  props: ['list'],
   data() {
     return {
     }
   },
   mounted() {
-    
+
   },
   methods: {
-    progressFormat(status){
-      return ['活动未开始','活动进行中','活动已结束'][status];
+    progressFormat(status) {
+      return ['活动未开始', '活动进行中', '活动已结束'][status];
     },
-    onDetail(e){
+    onDetail(e) {
       const { id } = e.currentTarget.dataset.item;
       this.$Router.push({
-        name : 'act.detail',
-        params : {
-          scene : id
+        name: 'act.detail',
+        params: {
+          scene: id
         }
       })
     }

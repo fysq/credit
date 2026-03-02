@@ -7,6 +7,7 @@
                 <view class="th item-index">序号</view>
                 <view class="th item-name">姓名</view>
                 <view class="th item-action">核销状态</view>
+                <view class="th item-action" v-for="(item, index) in custom_form" :key="index">{{ item.label }}</view>
             </view>
             <view class="table-body" v-if="state.list.length > 0">
                 <view class="tr" v-for="(item, index) in state.list" :key="item.id">
@@ -16,6 +17,9 @@
                         <view class="btn hexiao-btn" v-if="item.verify_status == 0" @tap="onHexiao(item)">核销</view>
                         <view class="verified-text" v-else>已核销</view>
                     </view>
+                    <view class="td item-action" v-for="(it, index) in JSON.parse(item.form_data)" :key="index">{{
+                        it.value
+                        }}</view>
                 </view>
             </view>
         </view>
@@ -31,7 +35,8 @@ export default {
     data() {
         return {
             title: '报名人员管理',
-            id: 0
+            id: 0,
+            custom_form: []
         }
     },
     onLoad(options) {
@@ -41,6 +46,12 @@ export default {
             setTimeout(() => { uni.navigateBack(); }, 1500);
             return;
         }
+        this.$api.actDetail({
+            id: this.id
+        }).then(res => {
+            console.log(res)
+            this.custom_form = res.custom_form;
+        })
         this.reset();
     },
     methods: {
@@ -75,7 +86,7 @@ export default {
 .actAdmin {
     min-height: 100vh;
     background-color: #f5f5f5;
-    padding: 20rpx;
+    padding: 20rpx 0;
 
     .table-container {
         background: #fff;
@@ -132,14 +143,20 @@ export default {
 
     .item-index {
         width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .item-name {
-        width: 35%;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .item-action {
-        width: 45%;
+        width: 40%;
         display: flex;
         justify-content: center;
         align-items: center;

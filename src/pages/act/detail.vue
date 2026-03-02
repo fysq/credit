@@ -92,13 +92,26 @@
               <input class="cfm-input" v-if="item.type == 'text'" v-model="formData[index]" placeholder="请输入" />
               <radio-group class="cfm-radio-group" v-if="item.type == 'radio'" @change="onRadioChange($event, index)">
                 <label class="cfm-radio" v-for="(opt, oIndex) in item.options" :key="oIndex">
-                  <radio :value="opt" :checked="formData[index] === opt" /> {{ opt }}
+                  <radio :value="opt.name ? opt.name : opt" :checked="formData[index] === (opt.name ? opt.name : opt)"
+                    :disabled="opt.limit > 0 && opt.count >= opt.limit" style="flex-shrink: 0;" />
+                  <view style="flex: 1;">{{ opt.name ? opt.name : opt }}</view>
+                  <text v-if="opt.limit > 0"
+                    style="color: #999; font-size: 24rpx; margin-left: 10rpx; white-space: nowrap; flex-shrink: 0;">({{
+                      opt.count >= opt.limit ? '已满' : '剩'
+                        + (opt.limit - opt.count) + '个' }})</text>
                 </label>
               </radio-group>
               <checkbox-group class="cfm-checkbox-group" v-if="item.type == 'checkbox'"
                 @change="onCheckboxChange($event, index)">
                 <label class="cfm-checkbox" v-for="(opt, oIndex) in item.options" :key="oIndex">
-                  <checkbox :value="opt" :checked="(formData[index] || []).includes(opt)" /> {{ opt }}
+                  <checkbox :value="opt.name ? opt.name : opt"
+                    :checked="(formData[index] || []).includes(opt.name ? opt.name : opt)"
+                    :disabled="opt.limit > 0 && opt.count >= opt.limit" style="flex-shrink: 0;" />
+                  <view style="flex: 1;">{{ opt.name ? opt.name : opt }}</view>
+                  <text v-if="opt.limit > 0"
+                    style="color: #999; font-size: 24rpx; margin-left: 10rpx; white-space: nowrap; flex-shrink: 0;">({{
+                      opt.count >= opt.limit ? '已满' : '剩'
+                        + (opt.limit - opt.count) + '个' }})</text>
                 </label>
               </checkbox-group>
             </view>

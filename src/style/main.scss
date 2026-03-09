@@ -299,19 +299,19 @@ page {
 
 .imSwiper {
   position: relative;
-  height: 360rpx;
+  height: 450rpx;
 
   &.s2 {
-    height: 380rpx;
+    height: 470rpx;
   }
 
   swiper {
-    height: 360rpx;
+    height: 450rpx;
   }
 
   .is {
     &-img {
-      height: 360rpx;
+      height: 450rpx;
     }
 
     &-dots {

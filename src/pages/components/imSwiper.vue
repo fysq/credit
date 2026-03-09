@@ -3,7 +3,7 @@
     <swiper @change="onChange" :circular="true" :autoplay="true">
       <swiper-item v-for="(item, index) in list" :key="index">
         <view class="is-img" @tap="onLink" :data-item="item">
-          <image mode="aspectFill" :src="imageFormat(item.img, 750, 700)" class="blockImg"></image>
+          <image mode="scaleToFill" :src="imageFormat(item.img, 750, 450)" class="blockImg"></image>
         </view>
       </swiper-item>
       <!--swiper-item>
